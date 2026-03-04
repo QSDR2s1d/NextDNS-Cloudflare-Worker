@@ -1,5 +1,7 @@
 # NextDNS Cloudflare Worker 反代
 
+**[English](https://github.com/QSDR2s1d/NextDNS-Cloudflare-Worker/blob/main/README.en.md) | 中文**
+
 一个基于 Cloudflare Worker 的 NextDNS DoH 反向代理，支持自定义路径、备用上游、ECS 透传和超时自动切换。
 
 ## 功能特性
