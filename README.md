@@ -24,7 +24,7 @@
 
 | 变量 | 必填 | 默认值 | 说明 |
 |------|------|--------|------|
-| `NEXTDNS_ID` | ✅ | 无 | 你的 NextDNS 配置 ID，在 NextDNS 控制台 Setup 页面查看 |
+| `NEXTDNS_ID` |  ✅  | 无 | 你的 NextDNS 配置 ID，在 NextDNS 控制台 Setup 页面查看 |
 | `BASE_PATH` | 可选 | `dns-query` | 自定义路径，用于隐藏你的 DoH 端点，填写 `mysecretpath` 则访问路径为 `/mysecretpath` |
 | `FALLBACK_URL` | 可选 | `https://dns.google/dns-query` | 主上游不可用时的备用 DoH 地址 |
 | `TIMEOUT_MS` | 可选 | `2500` | 主上游超时时间（毫秒），超时后自动切换备用 |
