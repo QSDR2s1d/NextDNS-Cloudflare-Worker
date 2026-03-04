@@ -22,12 +22,12 @@
 
 进入 Worker 的 **Settings → Variables**，添加以下环境变量：
 
-| 变量 |  必填  | 默认值 | 说明 |
-|------|--------|--------|------|
+| 变量 | 必填 | 默认值 | 说明 |
+|------|------|--------|------|
 | `NEXTDNS_ID` | ✅ | 无 | 你的 NextDNS 配置 ID，在 NextDNS 控制台 Setup 页面查看 |
-| `BASE_PATH` | 可选 | `dns-query` | 自定义路径，用于隐藏你的 DoH 端点，填写 `mysecretpath` 则访问路径为 `/mysecretpath` |
-| `FALLBACK_URL` | 可选 | `https://dns.google/dns-query` | 主上游不可用时的备用 DoH 地址 |
-| `TIMEOUT_MS` | 可选 | `2500` | 主上游超时时间（毫秒），超时后自动切换备用 |
+| `BASE_PATH` | — | `dns-query` | 自定义路径，用于隐藏你的 DoH 端点，填写 `mysecretpath` 则访问路径为 `/mysecretpath` |
+| `FALLBACK_URL` | — | `https://dns.google/dns-query` | 主上游不可用时的备用 DoH 地址 |
+| `TIMEOUT_MS` | — | `2500` | 主上游超时时间（毫秒），超时后自动切换备用 |
 
 ### 3. 在设备上配置 DoH
 
@@ -108,3 +108,7 @@ ECS（EDNS Client Subnet）让 DNS 服务器知道客户端大致位置，从而
 **Q：Worker 免费套餐够用吗？**
 
 Cloudflare Workers 免费套餐每天有 10 万次请求额度，个人使用完全够用。
+
+## License
+
+MIT
